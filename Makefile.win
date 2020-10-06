@@ -428,7 +428,7 @@ devclean:
 config.erl:
 	@echo Apache CouchDB has not been configured.
 	@echo Try "powershell -ExecutionPolicy Bypass .\configure.ps1 -?" for help.
-	@echo You probably want "powershell -ExecutionPolicy Bypass .\configure.ps1 -WithCurl".
+	@echo You probably want "powershell -ExecutionPolicy Bypass .\configure.ps1".
 	@echo.
 	@false
 

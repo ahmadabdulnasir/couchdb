@@ -46,10 +46,6 @@ static const char USAGE_TEMPLATE[] =
     "\n"
     "  -h          display a short help message and exit\n"
     "  -V          display version information and exit\n"
-    "  -H          enable %s cURL bindings (only avaiable\n"
-    "              if package was built with cURL available)\n"
-    "  -T          enable test suite specific functions (these\n"
-    "              should not be enabled for production systems)\n"
     "  -S SIZE     specify that the runtime should allow at\n"
     "              most SIZE bytes of memory to be allocated\n"
     "              default is 64 MiB\n"
@@ -78,7 +74,6 @@ static const char USAGE_TEMPLATE[] =
             basename,                           \
             basename,                           \
             PACKAGE_NAME,                       \
-            basename,                           \
             PACKAGE_BUGREPORT)
 
 #define DISPLAY_USAGE couch_usage(BASENAME)
